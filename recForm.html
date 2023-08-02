@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <title>Document</title>
+</head>
+<body>
+    
+  <header>
+    <div class="px-3 py-2 text-white" style="background-color: #cfe2ff;">
+      <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+          <a href="mainPage.html" class="nav-link text-dark my-2 my-lg-0 me-lg-auto">
+            <img src="assets/img/home-page.png" alt="Hired" class="bi d-block mx-auto mb-1" width="25">
+            Начало
+          </a>
+
+          <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
+            <li>
+              <a href="recForm.html" class="nav-link text-secondary">
+                <img src="assets/img/hired.png" alt="Hired" class="bi d-block mx-auto mb-1" width="25">
+                Приём
+              </a>
+            </li>
+            <li>
+              <a href="delete.php" class="nav-link text-dark">
+                <img src="assets/img/job.png" alt="Hired" class="bi d-block mx-auto mb-1" width="25">
+                Увольнение
+              </a>
+            </li>
+            <li>
+              <a href="retirement.php" class="nav-link text-dark">
+                <img src="assets/img/retirement.png" alt="Hired" class="bi d-block mx-auto mb-1" width="25">
+                Пенсия
+              </a>
+            </li>
+            <li>
+              <a href="military.php" class="nav-link text-dark">
+                <img src="assets/img/soldier.png" alt="Hired" class="bi d-block mx-auto mb-1" width="25">
+                Военнообязанные
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+    <div class="container py-3">
+
+        <form class="row g-3" method="post" action="rec/recruitment.php">
+
+            <h3 class="text-left text-primary">ОБЩИЕ СВЕДЕНИЯ</h3>
+          
+            <div class="row mb-3">
+              <div class="col-md-2">
+                <label for="numOfPersonalFile" class="form-label">№ Личного дела</label>
+                <input type="text" class="form-control" id="numOfPersonalFile" name="numOfPersonalFile">
+              </div>
+              <div class="col-md-2">
+                <label for="inputSex" class="form-label">Пол</label>
+                <select id="inputSex" class="form-select"  name="inputSex">
+                  <option value="1" selected>Мужской</option>
+                  <option value="2">Женский</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <div class="col-md-4">
+                  <label for="inputSurname" class="form-label">Фамилия</label>
+                  <input type="text" class="form-control" id="inputSurname"  name="inputSurname">
+              </div>
+              <div class="col-md-4">
+                <label for="inputName" class="form-label">Имя</label>
+                <input type="text" class="form-control" id="inputName"  name="inputName">
+              </div>
+              <div class="col-md-4">
+                  <label for="inputPatronymic" class="form-label">Отчество</label>
+                  <input type="text" class="form-control" id="inputPatronymic"  name="inputPatronymic">
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <label for="inputYear" class="col-md col-form-label">Год рождения</label>
+              <div class="col-md-2">
+                <input type="text" class="form-control" id="inputYear"  name="inputYear">
+              </div>
+
+              <label for="inputMonth" class="col-md col-form-label">Месяц</label>
+              <div class="col-md-2">
+                <input type="text" class="form-control" id="inputMonth"  name="inputMonth">
+              </div>
+
+              <label for="inputDay" class="col-md col-form-label">Число</label>
+              <div class="col-md-2">
+                <input type="text" class="form-control" id="inputDay"  name="inputDay">
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <label for="inputPlaceOfBirth" class="col-md-2 col-form-label">Место рождения</label>
+              <div class="col-md-10">
+                <input type="text" class="form-control" id="inputPlaceOfBirth"  name="inputPlaceOfBirth">
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <label for="inputNationality" class="col-md-2 col-form-label">Гражданство</label>
+              <div class="col-md-10">
+                <input type="text" class="form-control" id="inputNationality"  name="inputNationality">
+              </div>
+            </div>
+
+
+
+            <h3 class="text-left text-primary">СВЕДЕНИЯ ОБ ОБРАЗОВАНИИ</h3>
+
+            <div class="row mb-3">
+              <label for="inputEducation" class="col-md-2 col-form-label">Образование</label>
+              <div class="col-md-10">
+                <input type="text" class="form-control" id="inputEducation"  name="inputEducation">
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <div class="col-md-12">
+                <label for="inputEdName" class="form-label">Наименование уч. заведения и место его нахождения</label>
+                <input type="text" class="form-control" id="inputEdName"  name="inputEdName">
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <label for="inputEducationStart" class="col-md-2 col-form-label">Дата поступления</label>
+              <div class="col-md-4">
+                <input type="text" class="form-control" id="inputEducationStart"  name="inputEducationStart">
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <label for="inputEducationFinish" class="col-md-2 col-form-label">Дата его окончания</label>
+              <div class="col-md-4">
+                <input type="text" class="form-control" id="inputEducationFinish"  name="inputEducationFinish">
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <label for="inputEducationFaculty" class="col-md-2 col-form-label">Факультет</label>
+              <div class="col-md-10">
+                <input type="text" class="form-control" id="inputEducationFaculty"  name="inputEducationFaculty">
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <label for="inputEducationSpeciality" class="col-md-2 col-form-label">Специальность по диплому</label>
+              <div class="col-md-10">
+                <input type="text" class="form-control" id="inputEducationSpeciality"  name="inputEducationSpeciality">
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <label for="inputEducationQualification" class="col-md-2 col-form-label">Квалификация</label>
+              <div class="col-md-10">
+                <input type="text" class="form-control" id="inputEducationQualification"  name="inputEducationQualification">
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <label for="inputDiplom" class="col-md-2 col-form-label">Диплом серия</label>
+              <div class="col-md-2">
+                <input type="text" class="form-control" id="inputDiplom"  name="inputDiplom">
+              </div>
+            </div>
+
+              <div class="row mb-3">
+                <label for="inputNumOfDiplom" class="col-md-2 col-form-label">№</label>
+                <div class="col-md-2">
+                  <input type="text" class="form-control" id="inputNumOfDiplom"  name="inputNumOfDiplom">
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <label for="inputDateOfDiplom" class="col-md-2 col-form-label">от</label>
+                <div class="col-md-2">
+                  <input type="text" class="form-control" id="inputDateOfDiplom"  name="inputDateOfDiplom">
+                </div>
+              </div>
+            
+
+
+            <h3 class="text-left text-primary">СЕМЕЙНОЕ ПОЛОЖЕНИЕ</h3>
+
+            <div class="row mb-3">
+              <label for="inputFamilyStatus" class="col-md-3 col-form-label">Семейное положение</label>
+              <div class="col-md-4">
+                <input type="text" class="form-control" id="inputFamilyStatus"  name="inputFamilyStatus">
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <label for="inputHusbandWife" class="col-md-3 col-form-label">Муж/Жена (если есть)</label>
+              <div class="col-md-5">
+                <textarea class="form-control" id="inputHusbandWife"  name="inputHusbandWife" rows="3"></textarea>
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <label for="inputChildren" class="col-md-3 col-form-label">Дети (при наличии)</label>
+              <div class="col-md-5">
+                <textarea class="form-control" id="inputChildren"  name="inputChildren" rows="3"></textarea>
+              </div>
+            </div>
+
+
+            <h3 class="text-left text-primary">ПАСПОРТНЫЕ ДАННЫЕ</h3>
+            
+            <div class="row mb-3">
+              <div class="col-md-2">
+                <label for="inputPassport" class="form-label">Паспорт серия</label>
+                <input type="text" class="form-control" id="inputPassport"  name="inputPassport">
+              </div>
+              <div class="col-md-3">
+                <label for="inputNumOfPassport" class="form-label">номер</label>
+                <input type="text" class="form-control" id="inputNumOfPassport"  name="inputNumOfPassport">
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <label for="inputPlaceOfIssue" class="col-md-2 col-form-label">Кем выдан</label>
+              <div class="col-md-6">
+                <input type="text" class="form-control" id="inputPlaceOfIssue"  name="inputPlaceOfIssue">
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <div class="col-md-3">
+                <label for="inputFirstDate" class="form-label">Дата выдачи</label>
+                <input type="text" class="form-control" id="inputFirstDate"  name="inputFirstDate">
+              </div>
+              <div class="col-md-3">
+                <label for="inputFinalDate" class="form-label">Сроком до</label>
+                <input type="text" class="form-control" id="inputFinalDate"  name="inputFinalDate">
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <label for="inputPersonalNumber" class="col-md-2 col-form-label">Личный номер</label>
+              <div class="col-md-4">
+                <input type="text" class="form-control" id="inputPersonalNumber"  name="inputPersonalNumber">
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <label for="inputPlaceOfHome" class="col-md-2 col-form-label">Прописан</label>
+              <div class="col-md-10">
+                <input type="text" class="form-control" id="inputPlaceOfHome"  name="inputPlaceOfHome">
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <label for="inputPlaceOfLiving" class="col-md-2 col-form-label">Проживаю</label>
+              <div class="col-md-10">
+                <input type="text" class="form-control" id="inputPlaceOfLiving"  name="inputPlaceOfLiving">
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <label for="inputPhone" class="col-md-2 col-form-label">Мобильный телефон</label>
+              <div class="col-md-4">
+                <input type="text" class="form-control" id="inputPhone"  name="inputPhone">
+              </div>
+            </div>
+
+            <h3 class="text-left text-primary">СВЕДЕНИЯ О ВОИНСКОМ УЧЕТЕ</h3>
+
+            <div class="row mb-3">
+              <div class="col-md-4">
+                <label for="inputNumberOfMilitaryId" class="form-label">Военный билет №</label>
+                <input type="text" class="form-control" id="inputNumberOfMilitaryId"  name="inputNumberOfMilitaryId">
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <label for="inputAccountingGroup" class="col-md col-form-label">Группа учёта</label>
+              <div class="col-md-4">
+                <input type="text" class="form-control" id="inputAccountingGroup"  name="inputAccountingGroup">
+              </div>
+
+              <label for="inputAccountingCategory" class="col-md col-form-label">Категория учёта</label>
+              <div class="col-md-4">
+                <input type="text" class="form-control" id="inputAccountingCategory"  name="inputAccountingCategory">
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <label for="inputCompound" class="col-md-2 col-form-label">Состав</label>
+              <div class="col-md-5">
+                <input type="text" class="form-control" id="inputCompound"  name="inputCompound">
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <label for="inputMilitaryRank" class="col-md-2 col-form-label">Воинское звание</label>
+              <div class="col-md-10">
+                <input type="text" class="form-control" id="inputMilitaryRank"  name="inputMilitaryRank">
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <label for="inputNumberOfMS" class="col-md-2 col-form-label">№ ВУС</label>
+              <div class="col-md-5">
+                <input type="text" class="form-control" id="inputNumberOfMS"  name="inputNumberOfMS">
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <div class="col-md-5">
+                <label for="inputFitnessOfMS" class="form-label">Годность к воинской службе</label>
+                <input type="text" class="form-control" id="inputFitnessOfMS"  name="inputFitnessOfMS">
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <div class="col-md-12">
+                <label for="inputNameOfTheMC" class="form-label">Наименование военного комиссариата по месту жительства</label>
+                <input type="text" class="form-control" id="inputNameOfTheMC"  name="inputNameOfTheMC">
+              </div>
+            </div>
+
+            <!-- /////////////////////////////////////////////////////////////////////////////////////////// -->
+
+            <h3 class="text-left text-primary">СВЕДЕНИЯ О НОВОМ СОТРУДНИКЕ</h3>
+
+            <div class="row mb-3">
+              <div class="col-md-3">
+                <label for="numOfOrder" class="form-label">№ ПРИКАЗА</label>
+                <input type="text" class="form-control" id="numOfOrder" name="numOfOrder">
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <div class="col-md-6">
+                <label for="inputJobPosition" class="form-label">Должность</label>
+                <input type="text" class="form-control" id="inputJobPosition" name="inputJobPosition">
+              </div>
+              <div class="col-md-6">
+                <label for="inputJobDepartment" class="form-label">Отдел</label>
+                <input type="text" class="form-control" id="inputJobDepartment" name="inputJobDepartment">
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <div class="col-md-4">
+                <label for="inputJobStart" class="form-label">Дата выхода на работу</label>
+                <input type="text" class="form-control" id="inputJobStart" name="inputJobStart">
+              </div>
+              <div class="col-md-4">
+                <label for="inputJobDateOfJobApplication" class="form-label">Дата заявления о приёме</label>
+                <input type="text" class="form-control" id="inputJobDateOfJobApplication" name="inputJobDateOfJobApplication">
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <div class="col-md-2">
+                <label for="inputJobContractOrAgreement" class="form-label">Трудовой</label>
+                <select id="inputJobContractOrAgreement" class="form-select"  name="inputJobContractOrAgreement">
+                  <option value="1" selected>контракт</option>
+                  <option value="2">договор</option>
+                </select>
+              </div>
+              <div class="col-md-3">
+                <label for="inputNumOfJobContractOrAgreement" class="form-label">№ контракта/договора</label>
+                <input type="text" class="form-control" id="inputNumOfJobContractOrAgreement" name="inputNumOfJobContractOrAgreement">
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <div class="col-md-5">
+                <label for="inputProbationaryPeriod" class="form-label">Продолжительность испытательного срока</label>
+                <input type="text" class="form-control" id="inputProbationaryPeriod" name="inputProbationaryPeriod">
+              </div>
+              <div class="col-md-2">
+                <label for="inputContractPeriod" class="form-label">Срок контракта</label>
+                <select id="inputContractPeriod" class="form-select"  name="inputContractPeriod">
+                  <option value="1" selected>1 год</option>
+                  <option value="2">2 года</option>
+                  <option value="3">3 года</option>
+                  <option value="4">4 года</option>
+                  <option value="5">5 лет</option>
+                </select>
+              </div>
+            </div>
+
+            <h5 class="text-left text-primary">УСЛОВИЯ ОПЛАТЫ ТРУДА</h5>
+
+            <div class="row mb-3">
+              <div class="col-md-9">
+                <label for="inputSalaryFirstPart" class="form-label">Тарифная ставка (оклада) в виде: величина цифрами (величина прописью)</label>
+                <input type="text" class="form-control" id="inputSalaryFirstPart" name="inputSalaryFirstPart">
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-md-9">
+                <label for="inputSalarySecondPart" class="form-label">Повышение тарифной ставки (оклада) в виде: величина цифрами (величина прописью)</label>
+                <input type="text" class="form-control" id="inputSalarySecondPart" name="inputSalarySecondPart">
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-md-9">
+                <label for="inputSalaryFinalPart" class="form-label">Должностной оклад в виде: величина цифрами (величина прописью)</label>
+                <input type="text" class="form-control" id="inputSalaryFinalPart" name="inputSalaryFinalPart">
+              </div>
+            </div>
+
+            <h5 class="text-left text-primary">УСЛОВИЯ ТРУДА</h5>
+            
+            <div class="row mb-3">
+              <div class="col-md-9">
+                <label for="inputHoursPerWeek" class="form-label">Количество часов в неделю</label>
+                <input type="text" class="form-control" id="inputHoursPerWeek" name="inputHoursPerWeek">
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-md-9">
+                <label for="inputDaysPerWeek" class="form-label">Количество дней в неделю</label>
+                <input type="text" class="form-control" id="inputDaysPerWeek" name="inputDaysPerWeek">
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-md-9">
+                <label for="inputVacationPerYear" class="form-label">Количество календарных дней отпуска в году</label>
+                <input type="text" class="form-control" id="inputVacationPerYear" name="inputVacationPerYear">
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-md-9">
+                <label for="inputAdditionalVacationPerYear" class="form-label">Дополнительный поощрительный отпуск за контрактную форму трудовых отношений</label>
+                <input type="text" class="form-control" id="inputAdditionalVacationPerYear" name="inputAdditionalVacationPerYear">
+              </div>
+            </div>
+
+
+            <div class="row mb-3 mt-3 justify-content-end">
+              <div class="col-md-4">
+                <label for="inputDateOfEntry" class="form-label">Дата заполнения</label>
+                <input type="text" class="form-control" id="inputDateOfEntry"  name="inputDateOfEntry">
+              </div>
+            </div>
+            
+
+            <div class="row mb-3 mt-3 justify-content-end">
+              <div class="col-auto">
+                <button type="submit" class="btn btn-primary btn-lg mb-3">Подтвердить</button>
+              </div>
+            </div>
+
+          </form>
+    </div>
+
+<script src="assets/js/bootstrap.bundle.js"></script>
+</body>
+</html>

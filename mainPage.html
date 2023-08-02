@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <title>Document</title>
+</head>
+<body>
+      <header>
+        <div class="px-3 py-2 text-white" style="background-color: #cfe2ff;">
+          <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+              <a href="mainPage.html" class="nav-link text-secondary my-2 my-lg-0 me-lg-auto">
+                <img src="assets/img/home-page.png" alt="Hired" class="bi d-block mx-auto mb-1" width="25">
+                Начало
+              </a>
+    
+              <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
+                <li>
+                  <a href="#rec" class="nav-link text-dark">
+                    <img src="assets/img/hired.png" alt="Hired" class="bi d-block mx-auto mb-1" width="25">
+                    Приём
+                  </a>
+                </li>
+                <li>
+                  <a href="#dism" class="nav-link text-dark">
+                    <img src="assets/img/job.png" alt="Hired" class="bi d-block mx-auto mb-1" width="25">
+                    Увольнение
+                  </a>
+                </li>
+                <li>
+                  <a href="#ret" class="nav-link text-dark">
+                    <img src="assets/img/retirement.png" alt="Hired" class="bi d-block mx-auto mb-1" width="25">
+                    Пенсия
+                  </a>
+                </li>
+                <li>
+                  <a href="#mil" class="nav-link text-dark">
+                    <img src="assets/img/soldier.png" alt="Hired" class="bi d-block mx-auto mb-1" width="25">
+                    Военнообязанные
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="py-5" style="background-color: #ededed;" id="rec">
+        <div class="container">
+            <h4 class="text-center mb-4">ПРИЁМ СОТРУДНИКОВ</h4>
+            <p class="text-center text-secondary fst-italic m-1">Заполните все необходимые поля, образом указанным рядом с полями.</p>
+            <p class="text-center text-secondary fst-italic m-1">При некорректном вводе данных, поле подсветится красным.</p>
+            <p class="text-center text-secondary fst-italic m-1">Нажмите кнопку продолжить, для подтверждения результатов.</p>
+        
+            <div class="row mt-3 justify-content-center">
+              <div class="col-auto">
+                <a href="recForm.html" class="btn btn-primary" role="button">Перейти</a>
+              </div>
+            </div>
+        </div>
+      </div>
+      
+      <div class="py-5" style="background-color: #d8d8d8;" id="dism">
+        <div class="container">
+            <h4 class="text-center mb-4">УВОЛЬНЕНИЕ СОТРУДНИКОВ</h4>
+            <p class="text-center text-secondary fst-italic m-1">Выберете необходимого вам сотрудника из таблицы</p>
+            <p class="text-center text-secondary fst-italic m-1">При необходимости, воспользуйтесь поиском. Начните вписывать фамилию или номер личного дела и в таблице отобразяться все совпадения.</p>
+            <p class="text-center text-secondary fst-italic m-1">Нажмите кнопку напротив выбранного вами сотрудника.</p>
+            <p class="text-center text-secondary fst-italic m-1">В появившемся окне введите необходимые данные и нажмите на кнопку "Подтвердить".</p>
+        
+            <div class="row mt-3 justify-content-center">
+              <div class="col-auto">
+                <a href="delete.php" class="btn btn-primary" role="button">Перейти</a>
+              </div>
+            </div>
+        </div>
+      </div>
+
+      <div class="py-5" style="background-color: #ededed;" id="ret">
+        <div class="container">
+            <h4 class="text-center mb-4">ПЕРЕВОД СОТРУДНИКОВ НА ПЕНСИЮ</h4>
+            <p class="text-center text-secondary fst-italic m-1">Заполните все необходимые поля с датами.</p>
+            <p class="text-center text-secondary fst-italic m-1">Первое значение это начала отрезка, второе – конец отрезка.</p>
+            <p class="text-center text-secondary fst-italic m-1">Нажмите кнопку продолжить, для формированеи списка сотрудников попадающий в этот отрезок времени.</p>
+        
+            <div class="row mt-3 justify-content-center">
+              <div class="col-auto">
+                <a href="retirement.php" class="btn btn-primary" role="button">Перейти</a>
+              </div>
+            </div>
+          </div>
+      </div>
+      
+      <div class="py-5" style="background-color: #d8d8d8;" id="mil">
+        <div class="container">
+            <h4 class="text-center mb-4">УЧЁТ ВОЕННООБЯЗАННЫХ</h4>
+            <p class="text-center text-secondary fst-italic m-1">Система сама сформирует список военнообязанных, основываясь на информации из базы данных.</p>
+        
+            <div class="row mt-3 justify-content-center">
+              <div class="col-auto">
+                <a href="military.php" class="btn btn-primary" role="button">Перейти</a>
+              </div>
+            </div>
+        </div>
+      </div>
+
+
+
+
+    <script src="assets/js/bootstrap.bundle.js"></script>
+</body>
+</html>
