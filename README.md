@@ -50,8 +50,9 @@ Afterwards, the system analyzes all employees and generates a list of employees 
 ## Built With
 
 <span><img src="https://img.shields.io/badge/PHP-%234f5b93?style=flat-square" alt="PHP"></span>
-<span><img src="https://img.shields.io/badge/jQuery-%230868ac?style=flat-square" alt="jQuery"></span>
-<span><img src="https://img.shields.io/badge/Ajax-%232687c7?style=flat-square" alt="Ajax"></span>
+<span><img src="https://img.shields.io/badge/phpWord-%2300188f?style=flat-square" alt="phpWord"></span>
+<span><img src="https://img.shields.io/badge/NameCaseLib-%23000?style=flat-square" alt="NameCaseLib"></span>
+<span><img src="https://img.shields.io/badge/JavaScript-%23f7df1e?style=flat-square" alt="JavaScript"></span>
 <span><img src="https://img.shields.io/badge/HTML-%23e44d26?style=flat-square" alt="HTML"></span>
 <span><img src="https://img.shields.io/badge/CSS-%23264de4?style=flat-square" alt="CSS"></span>
 <span><img src="https://img.shields.io/badge/Bootstrap-%238712fb?style=flat-square" alt="Bootstrap"></span>
